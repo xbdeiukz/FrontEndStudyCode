@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网页换肤</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    body {
+      background: linear-gradient(crimson -90%, white);
+      height: 1080px;
+    }
+
+    .container {
+      width: 750px;
+      margin: 66px auto 0;
+    }
+
+    .skin {
+      display: flex;
+      width: 88px;
+      justify-content: space-between;
+      margin: 0 0 10px;
+    }
+
+    .skin li {
+      width: 22px;
+      height: 22px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    .red {
+      background-color: red;
+      border: 6px solid red;
+    }
+
+    .green {
+      background-color: green;
+      border: 6px solid green;
+    }
+
+    .black {
+      background-color: black;
+      border: 6px solid black;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid #fff;
+      height: 30px;
+      background-color: red;
+    }
+
+    .nav li {
+      flex: 1;
+      text-align: center;
+      padding: 5px 0;
+    }
+
+    .nav li a {
+      display: block;
+      border-right: 1px solid;
+    }
+
+    .nav li:last-child a {
+      border-right: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <ul class="skin">
+      <li class="red"></li>
+      <li class="green"></li>
+      <li class="black"></li>
+    </ul>
+    <ul class="nav">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">新闻</a></li>
+      <li><a href="#">娱乐</a></li>
+      <li><a href="#">体育</a></li>
+      <li><a href="#">科技</a></li>
+      <li><a href="#">音乐</a></li>
+      <li><a href="#">电影</a></li>
+      <li><a href="#">美食</a></li>
+      <li><a href="#">旅游</a></li>
+    </ul>
+  </div>
+
+  <script>
+    document.querySelector('.red').style.backgroundColor = '#fff'
+    document.body.style.height = window.innerHeight + 'px'
+    window.onresize = function () {
+      document.body.style.height = window.innerHeight + 'px'
+    }
+
+    var skins = document.querySelectorAll('.skin li')
+    var nav = document.querySelector('.nav')
+    var bodyBgC = ['linear-gradient(crimson -90%, white)', 'linear-gradient(green -90%, white)',
+      'linear-gradient(black -90%, white)'
+    ]
+    var navBgC = ['red', 'green', 'black']
+
+    skins.forEach(function (elem, index) {
+      elem.onclick = function () {
+        // 更换body和导航的背景色：
+        document.body.style.background = bodyBgC[index]
+        nav.style.backgroundColor = navBgC[index]
+        // 更换主题按钮的样式：
+        skins.forEach(function (elem, index) {
+          if (window.getComputedStyle) {
+            elem.style.backgroundColor = window.getComputedStyle(elem, null)['borderColor']
+          } else {
+            elem.style.backgroundColor = elem.currentStyle['borderColor']
+          }
+        })
+        elem.style.backgroundColor = '#fff'
+      }
+    })
+  </script>
+</body>
+
+</html>

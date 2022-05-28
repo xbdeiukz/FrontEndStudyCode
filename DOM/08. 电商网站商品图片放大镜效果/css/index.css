@@ -1,0 +1,39 @@
+.img-wrap {
+	position: relative;
+	width: 600px;
+	height: 375px;
+	margin: 100px auto;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 5px #999;
+}
+
+.img-wrap .mag-wrap {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	box-shadow: 0 0 3px #ccc;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.img-wrap .mag-wrap.show {
+	display: block;
+	transform: scale(1.5);
+	cursor: move;
+}
+
+.img-wrap .mag-wrap .mag-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 600px;
+	height: 375px;
+}
+
+.img-wrap .static-img {
+	height: 100%;
+}

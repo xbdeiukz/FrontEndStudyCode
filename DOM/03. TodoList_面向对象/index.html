@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TodoList</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrap" data-config='{
+		"plusBtn": "j-show-input",
+		"inputWrap": "input-wrap",
+		"addBtn": "j-add-btn",
+		"todoList": "todo-list",
+		"todoItem": "todo-item"
+	}'>
+		<div class="list-hd">
+			<h2>TodoList</h2>
+			<a href="javascript:;" class="j-show-input fa fa-plus"></a>
+		</div>
+		<div class="input-wrap">
+			<div class="input-bd"><input class="text-input" type="text" placeholder="请输入待办事项"></div>
+			<div class="btn-bd"><button class="j-add-btn">添加计划</button></div>
+		</div>
+		<div class="list-wrap">
+			<ul class="todo-list"></ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/utils.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>

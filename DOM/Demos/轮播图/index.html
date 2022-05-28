@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轮播图</title>
+  <style>
+    body,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul {
+      list-style: none;
+    }
+    .container {
+      position: relative;
+      width: 500px;
+      margin: 0 auto;
+      border: 1px solid;
+      margin-top: 32px;
+    }
+    .slider {
+      width: 500px;
+      height: 300px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .slider li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 1s;
+    }
+    .slider img {
+      width: 500px;
+      height: 300px;
+    }
+    .arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+    }
+    .arrow-left {
+      margin: auto;
+    }
+    .arrow-right {
+      right: 0;
+      margin: auto;
+    }
+    .arrow:hover {
+      background-color: rgba(0, 0, 0, .3);
+    }
+    .btn {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 3%;
+      margin: auto;
+      width: 123px;
+      height: 18px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(0, 0, 0, .3);
+    }
+    .btn li {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <ul class="slider">
+      <li><img src="./images/img01.jpg" alt=""></li>
+      <li><img src="./images/img02.jpg" alt=""></li>
+      <li><img src="./images/img03.jpg" alt=""></li>
+      <li><img src="./images/img04.jpg" alt=""></li>
+      <li><img src="./images/img05.jpg" alt=""></li>
+    </ul>
+    <span class="arrow arrow-left">&lt;</span>
+    <span class="arrow arrow-right">&gt;</span>
+    <ul class="btn">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <script>
+    var imgBox = document.querySelector('.slider')
+    var imgList = document.querySelectorAll('.slider li')
+    var btn = document.querySelectorAll('.btn li')
+    var arrowLeft = document.querySelector('.arrow-left')
+    var arrowRight = document.querySelector('.arrow-right')
+    var timer,
+      currentIndex = 0
+    btn[currentIndex].style.backgroundColor = 'lightseagreen'
+
+    // 切换轮播图功能：
+    function changeSlider() {
+      for (let i = 0; i < imgList.length; i++) {
+        imgList[i].style.opacity = 0
+        btn[i].style.backgroundColor = '#fff'
+      }
+      imgList[currentIndex].style.opacity = 1
+      btn[currentIndex].style.backgroundColor = 'lightseagreen'
+    }
+
+    // 自动轮播功能：
+    function autoSlide() {
+      timer = setInterval(function () { // 定时器开启后不是立即执行里面代码，而是先延迟一个周期后再执行
+        currentIndex++
+        if (currentIndex == imgList.length) currentIndex = 0
+        changeSlider()
+      }, 3000)
+    }
+
+    // 轮播开始与暂停：
+    changeSlider()
+    autoSlide()
+
+    imgBox.onmouseover = function () {
+      clearInterval(timer)
+    }
+    imgBox.onmouseout = function () {
+      autoSlide()
+    }
+
+    // 点击箭头，切换轮播图：
+    arrowLeft.onclick = function () {
+      clearInterval(timer)
+      currentIndex--
+      if (currentIndex == -1) {
+        currentIndex = imgList.length - 1;
+      }
+      changeSlider()
+      autoSlide()
+    }
+    arrowRight.onclick = function () {
+      clearInterval(timer)
+      currentIndex++
+      if (currentIndex == imgList.length) {
+        currentIndex = 0
+      }
+      changeSlider()
+      autoSlide()
+    }
+
+    // 点击按钮，切换轮播图：
+    btn.forEach(function (item, index) {
+      item.onclick = function () {
+        clearInterval(timer)
+        currentIndex = index
+        changeSlider()
+        slide()
+      }
+    })
+  </script>
+</body>
+
+</html>

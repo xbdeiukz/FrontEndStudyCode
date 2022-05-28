@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页中滚动的图片</title>
+    <style>
+        #container {
+            width: 800px;
+            height: 138px;
+            margin: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 0;
+        }
+        img {
+            width: 200px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <span id="imgList01">
+            <img src="./images/img01.jpg" alt="">
+            <img src="./images/img02.jpg" alt="">
+            <img src="./images/img03.jpg" alt="">
+            <img src="./images/img04.jpg" alt="">
+            <img src="./images/img05.jpg" alt="">
+        </span>
+        <span id="imgList02">
+        </span>
+    </div>
+
+    <script>
+        // 思路：用两组相同的图片，当第一组图片的最后一张图片消失的瞬间，把 scrollLeft 重设为 0，可实现无缝衔接的视觉效果；
+        var box = document.getElementById('container')
+        var imgList01 = document.getElementById('imgList01')
+        var imgList02 = document.getElementById('imgList02')
+        imgList02.innerHTML = imgList01.innerHTML;
+
+        window.onload = function() {
+            setInterval(function() {
+                box.scrollLeft += 1;
+                if(box.scrollLeft == 1000){
+                    box.scrollLeft = 0;
+                }
+            }, 9)
+        }
+    </script>
+</body>
+</html>

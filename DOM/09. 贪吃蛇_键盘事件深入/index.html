@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>贪吃蛇</title>
+	<style>
+		.wrap {
+			position: relative;
+			width: 500px;
+			height: 500px;
+			margin: 20px auto;
+			background-color: #000;
+		}
+
+		.round {
+			position: absolute;
+			z-index: 0;
+			width: 20px;
+			height: 20px;
+			background-color: green;
+			border-radius: 50%;
+		}
+
+		.round.head {
+			background-color: red;
+		}
+
+		.food {
+			position: absolute;
+			z-index: 1;
+			width: 20px;
+			height: 20px;
+			background-color: yellow;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap"></div>
+
+	<script src="./js/global.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			init();
+		}
+
+		function init() {
+			initGame();
+		}
+
+		var initGame = (function () {
+			var oWrap = document.getElementsByClassName('wrap')[0],
+				wrapWidth = getStyle(oWrap, 'width', false),
+				wrapHeight = getStyle(oWrap, 'height', false),
+				timer = null;
+
+			function Snake() {
+				this.base = 20;
+				this.bodyArr = [
+					{ x: 0, y: 0 },
+					{ x: 0, y: 1 },
+					{ x: 0, y: 2 },
+					{ x: 0, y: 3 },
+					{ x: 0, y: 4 },
+					{ x: 0, y: 5 }
+				];
+				this.direction = 'DOWN';
+			}
+
+			Snake.prototype = {
+				init: function () {
+					this.initSnake();
+					// this.snakeAutoMove();
+					this.bindEvent();
+					this.createFood();
+				},
+				bindEvent: function () {
+					var _self = this;
+					addEvent(document, 'keydown', function () {
+						_self.changeDirection();
+					});
+
+					addEvent(oWrap, 'click', function() {
+						_self.snakeAutoMove();
+					});
+
+					console.log('鼠标点击黑色区域开始游戏！');
+				},
+				initSnake: function () {
+					var base = this.base,
+						arr = this.bodyArr,
+						len = arr.length,
+						oFrag = document.createDocumentFragment();
+
+					for (var i = 0; i < len; i++) {
+						var oRound = document.createElement('i');
+
+						oRound.style.top = arr[i].y * base + 'px';
+						oRound.style.left = arr[i].x * base + 'px';
+						oRound.className = i == len - 1 ? 'round head' : 'round';
+						oFrag.appendChild(oRound);
+					}
+
+					oWrap.appendChild(oFrag);
+				},
+				snakeMove: function () {
+					var base = this.base,
+						arr = this.bodyArr,
+						len = arr.length,
+						snakeHead = arr[len - 1],
+						snakeTail = {};
+
+					for (var i = 0; i < len; i++) {
+						if (i == len - 1) {
+							switch (this.direction) {
+								case 'LEFT':
+									snakeHead.x = snakeHead.x <= 0 ? wrapWidth / base - 1 : --snakeHead.x;
+									break;
+								case 'RIGHT':
+									snakeHead.x = snakeHead.x >= wrapWidth / base - 1 ? 0 : ++snakeHead.x;
+									break;
+								case 'UP':
+									snakeHead.y = snakeHead.y <= 0 ? wrapHeight / base - 1 : --snakeHead.y;
+									break;
+								case 'DOWN':
+									snakeHead.y = snakeHead.y >= wrapHeight / base - 1 ? 0 : ++snakeHead.y;
+									break;
+								default:
+									break;
+							}
+						} else {
+							if (i === 0) {
+								snakeTail.x = arr[0].x;	//	注意：此处不能写成 snakeTail = arr[0]; 引用值
+								snakeTail.y = arr[0].y;
+							}
+							arr[i].x = arr[i + 1].x;
+							arr[i].y = arr[i + 1].y;
+						}
+					}
+
+					this.removeSnake();
+					this.initSnake();
+					this.headInBody(arr);
+					this.eatFood(arr, snakeTail);
+				},
+				removeSnake: function () {
+					var oRounds = document.getElementsByClassName('round');
+
+					while (oRounds.length) {
+						oRounds[0].remove();
+					}
+				},
+				snakeAutoMove: function () {
+					var _self = this;
+
+					timer = setInterval(function () {
+						_self.snakeMove();
+					}, 200);
+				},
+				changeDirection: function (e) {
+					var e = e || window.event,
+						keyCode = e.keyCode;
+
+					this.setDirection(keyCode);
+				},
+				setDirection: function (keyCode) {
+					switch (keyCode) {
+						case 37:
+							if (this.direction == 'UP' || this.direction == 'DOWN') {
+								this.direction = 'LEFT';
+							}
+							break;
+						case 39:
+							if (this.direction == 'UP' || this.direction == 'DOWN') {
+								this.direction = 'RIGHT';
+							}
+							break;
+						case 38:
+							if (this.direction == 'LEFT' || this.direction == 'RIGHT') {
+								this.direction = 'UP';
+							}
+							break;
+						case 40:
+							if (this.direction == 'LEFT' || this.direction == 'RIGHT') {
+								this.direction = 'DOWN';
+							}
+							break;
+						default:
+							break;
+					}
+				},
+				headInBody: function (bodyArr) {
+					var len = bodyArr.length,
+						headX = bodyArr[len - 1].x,
+						headY = bodyArr[len - 1].y,
+						item,
+						_self = this;
+
+					for (var i = 0; i < len - 2; i++) {
+						item = bodyArr[i];
+						if (headX == item.x && headY == item.y) {
+							setTimeout(function () {
+								alert('Game Over!');
+								clearInterval(timer);
+								_self.removeSnake();
+							}, 0);
+						}
+					}
+				},
+				createFood: function () {
+					var base = this.base,
+						arr = this.bodyArr,
+						len = arr.length,
+						oFood = document.createElement('i'),
+						fTop = this.setFoodPos().top,
+						fLeft = this.setFoodPos().left;
+
+					oFood.style.top = fTop + 'px';
+					oFood.style.left = fLeft + 'px';
+					oFood.className = 'food';
+
+					oWrap.appendChild(oFood);
+				},
+				setFoodPos: function () {
+					var base = this.base;
+					return {
+						top: Math.floor(Math.random() * wrapHeight / base) * base,
+						left: Math.floor(Math.random() * wrapWidth / base) * base
+					}
+				},
+				eatFood: function (bodyArr, snakeTail) {
+					var base = this.base,
+						len = bodyArr.length,
+						headX = bodyArr[len - 1].x,
+						headY = bodyArr[len - 1].y,
+						oFood = document.getElementsByClassName('food')[0],
+						foodX = getStyle(oFood, 'left', false) / base,
+						foodY = getStyle(oFood, 'top', false) / base;
+
+					if (headX == foodX && headY == foodY) {
+						oFood.remove();
+						this.createFood();
+						this.snakeGrow(snakeTail);
+					}
+				},
+				snakeGrow: function (snakeTail) {
+					// 方式一：
+					var base = this.base,
+						oTail = document.createElement('i');
+
+					// 速度快则可省略后面4行代码：
+					oTail.className = 'round';
+					oTail.style.top = snakeTail.y * base + 'px';
+					oTail.style.left = snakeTail.x * base + 'px';
+					oWrap.appendChild(oTail);
+
+					this.bodyArr.unshift(snakeTail);
+					console.log(this.bodyArr.length);
+
+					// 方式二：参数要传入 snakeMove 中的 arr：
+					// if (arr[0].x === arr[1].x) {
+					// 	x = arr[0].x;
+					// 	if(arr[0].y > arr[1].y) {
+					// 		y = arr[0].y + base;
+					// 	} else if (arr[0].y < arr[1].y) {
+					// 		y = arr[0].y - base;
+					// 	}
+					// } else if (arr[0].y === arr[1].y) {
+					// 	y = arr[0].y;
+					// 	if (arr[0].x > arr[1].x) {
+					// 		x = arr[0].x + base;
+					// 	} else if (arr[0].x < arr[1].x) {
+					// 		x = arr[0].x - base;
+					// 	}
+					// }
+
+					// arr.unshift({x, y});
+				}
+			}
+
+			return new Snake().init();
+		});
+	</script>
+</body>
+
+</html>

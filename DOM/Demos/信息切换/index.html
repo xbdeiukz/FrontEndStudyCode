@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>信息切换</title>
+  <style>
+    body,
+    ul,
+    li,
+    h3 {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: red;
+    }
+
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    #container {
+      width: 1200px;
+      margin: 30px auto 0;
+      background-color: #f6f6f6;
+    }
+
+    #tab {
+      border-bottom: 3px solid #ff6600;
+    }
+
+    #tab li {
+      float: left;
+      width: 88px;
+      height: 33px;
+      line-height: 33px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .active {
+      background-color: #ff6600;
+      color: #fff;
+    }
+
+    #tabb li {
+      height: 32px;
+      line-height: 32px;
+    }
+
+    #tabb ul {
+      width: 200px;
+      border: 2px solid #ff6600;
+      padding: 6px;
+      font-size: 12px;
+      background-color: #fff;
+      z-index: 1;
+    }
+    #tabb ul li {
+      float: left;
+      width: 90px;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <ul id="tab" class="clearfix">
+      <!-- <li class="active">前端</li>
+      <li>后端</li> -->
+    </ul>
+    <ul id="tabb">
+      <!-- <li>
+        <a href="javacript:void();">前端实习生</a>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </li> -->
+    </ul>
+  </div>
+
+  <script src="./data.js"></script>
+  <script>
+    var tab = document.getElementById('tab')
+    var tabb = document.getElementById('tabb')
+
+    // 加载首页数据：
+    for(let i = 0; i < data.length; i++) {
+      tab.innerHTML += '<li>' + data[i].name + '</li>'
+    }
+    var tabItem = tab.getElementsByTagName('li')
+    tabItem[0].className = 'active'
+    loadInfo(data[0])
+
+    // 切换选项卡，更新数据：
+    for(let i = 0; i < tabItem.length; i++) {
+      tabItem[i].onclick = function () {
+        for (let i = 0; i < tabItem.length; i++) {
+          tabItem[i].className = ''
+        }
+        this.className = 'active'
+        tabb.innerHTML = ''
+        loadInfo(data[i])
+      }
+    }
+
+    function loadInfo(obj) {
+      for(let i = 0; i < obj.list.length; i++) {
+        var li = document.createElement('li')
+        var a = document.createElement('a')
+        a.innerHTML = obj.list[i].title
+        a.href = '#'
+        li.appendChild(a)
+        tabb.appendChild(li)
+        var left = a.offsetWidth  // 节点只有在被插入HTML文档后才能获取它的宽高
+
+
+        var ul = document.createElement('ul')
+        var h3 = document.createElement('h3')
+        var li01 = document.createElement('li')
+        var li02 = document.createElement('li')
+        var li03 = document.createElement('li')
+        var li04 = document.createElement('li')
+        var li05 = document.createElement('li')
+        var li06 = document.createElement('li')
+
+        h3.innerHTML = obj.list[i].company
+        li01.innerHTML = '人数：' + obj.list[i].recruitingNumbers
+        li02.innerHTML = '地址：' + obj.list[i].workingLocation
+        li03.innerHTML = '学历：' + obj.list[i].education
+        li04.innerHTML = '经验：' + obj.list[i].workExperience
+        li05.innerHTML = '工资：' + obj.list[i].wage
+        li06.innerHTML = '日期：' + obj.list[i].addDate
+        ul.appendChild(h3)
+        ul.appendChild(li01)
+        ul.appendChild(li02)
+        ul.appendChild(li03)
+        ul.appendChild(li04)
+        ul.appendChild(li05)
+        ul.appendChild(li06)
+        li.appendChild(ul)
+        li.style.position = 'relative'
+        ul.style.cssText = 'display: none; position: absolute;'
+        ul.style.top = '9px'
+        ul.style.left = left + 6 + 'px'
+      }
+
+      // 鼠标经过显示数据，鼠标离开隐藏数据（两种方案：1.先插入所有数据，然后通过事件控制数据的显示与隐藏；2.事件触发后，再插入并显示指定的数据）：
+      var ul = document.getElementById('tabb').getElementsByTagName('ul')
+      var aNodes = document.getElementById('tabb').getElementsByTagName('a')
+      var liNodes = document.getElementById('tabb').children
+      Array.prototype.forEach.call(aNodes, function(item, index) {
+        item.onmouseover = function () {
+          ul[index].style.display = 'block'
+        }
+      })
+      Array.prototype.forEach.call(liNodes, function(item, index) {
+        item.onmouseout = function () {
+          ul[index].style.display = 'none'
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

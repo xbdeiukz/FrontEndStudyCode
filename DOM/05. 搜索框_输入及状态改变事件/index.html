@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>输入及状态改变事件、京东搜索框</title>
+	<style>
+		input {
+			outline: none;
+			border: none;
+			box-sizing: border-box;
+		}
+
+		.input-wrap {
+			position: relative;
+			width: 250px;
+			height: 35px;
+			margin: 50px auto;
+		}
+
+		.input-wrap .auto-kw {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			z-index: -1;
+			font-size: 14px;
+			color: #989898;
+		}
+
+		.input-wrap .auto-kw.show {
+			display: block;
+			color: #989898;
+		}
+
+		.input-wrap .auto-kw.hide {
+			display: none;
+			color: #666;
+		}
+
+		.input-wrap .search-input {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #ddd;
+			text-indent: 5px;
+			color: #424242;
+			background-color: transparent;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="input-wrap">
+		<div class="auto-kw" id="J_auto_kw">推荐词</div>
+		<input type="text" class="search-input" id="J_search_kw">
+	</div>
+	<div id="J_recomKw" style="display: none;">
+		["火影忍者", "进击的巨人", "一拳超人", "灌篮高手", "足球小将", "哆啦A梦"]
+	</div>
+	<script src="./js/global.js"></script>
+	<script src="./js/search.js"></script>
+</body>
+</html>

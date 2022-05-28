@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>点击拖拽分离、拖拽边界、双击事件、右键菜单</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		a {
+			position: absolute;
+			display: block;
+			width: 100px;
+			height: 100px;
+			background-color: orangered;
+			line-height: 100px;
+			text-align: center;
+		}
+
+		div {
+			position: absolute;
+			display: none;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="javascript:;">百度</a>
+	<div></div>
+
+	<script src="./js/global.js"></script>
+	<script>
+// 功能实现：
+// 1. 拖拽无法超出出口范围；
+// 2. 双击跳转到一个网页；
+// 3. 右键菜单（设置菜单位置）；
+
+		var oLink = document.getElementsByTagName('a')[0],
+				oMenu = document.getElementsByTagName('div')[0];
+		
+		// #region
+		/*
+		var dragNclick = function(elem, elemClick) {
+			var startTime,
+					eTiem;
+
+			drag(elem);
+
+			function drag(elem) {
+				addEvent(elem, 'mousedown', function (e) {
+					var e = e || window.event,
+						originOffset = {
+							top: parseInt(getStyle(elem, 'top')),
+							left: parseInt(getStyle(elem, 'left'))
+						},
+						dw = pagePos(e).x - originOffset.left,
+						dh = pagePos(e).y - originOffset.top;
+						startTime = new Date().getTime();
+
+
+					addEvent(document, 'mousemove', mouseMove);
+					addEvent(document, 'mouseup', mouseUp);
+					stopEventBubble(e);
+					preventEventDefault(e);
+
+					function mouseMove(e) {
+						var e = e || window.event;
+						elem.style.top = pagePos(e).y - dh + 'px';
+						elem.style.left = pagePos(e).x - dw + 'px';
+					}
+
+					function mouseUp(e) {
+						var e = e || window.event;
+						endTime = new Date().getTime();
+
+						if (endTime - startTime < 123) {
+							elemClick();
+							elem.style.top = originOffset.top + 'px';
+							elem.style.left = originOffset.left + 'px';
+						}
+
+						removeEvent(document, 'mousemove', mouseMove);
+						removeEvent(document, 'mouseup', mouseUp);
+					}
+				})
+			}
+		}
+
+		dragNclick(oLink, function() {
+			window.open('http://www.baidu.com');
+		});
+		*/
+		// #endregion
+
+		oLink.dragNclick(oMenu, function() {
+			window.open('http://www.baidu.com');
+		});
+
+	</script>
+</body>
+
+</html>

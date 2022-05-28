@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>静谧星空</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    function createMoon() {
+      let moon = document.createElement('div')
+      document.body.appendChild(moon)
+      moon.style.cssText = `
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 36;
+        background-color: #cbdbee;
+        box-shadow: 0 0 18px #fff;`
+      moon.style.top = 1/8 * window.innerHeight * Math.random() + 18 + 'px'
+      moon.style.left = window.innerWidth * Math.random() + 'px'
+    }
+
+    function createStar() {
+      let star = document.createElement('div')
+      let left = (Math.floor(7 * Math.random()) + 1 ) * 7
+
+      document.body.appendChild(star)
+      star.style.cssText = 'width: 7px; height: 7px'
+      star.style.position = 'absolute'
+      star.style.top = 1/2 * window.innerHeight * Math.random() + 'px'
+      star.style.left = window.innerWidth * Math.random() + 'px'
+      star.style.backgroundImage = 'url(./images/star.png)'
+      star.style.backgroundPosition = left + 'px'
+
+      // stars twinkle:
+      setInterval(function() {
+        left += 7
+        if (left >= 56) left = 0
+        star.style.backgroundPosition = left + 'px'
+      }, 168)
+    }
+
+    createMoon()
+    for (let i=0; i<36; i++) {
+      createStar()
+    }
+
+    window.onresize = function() {
+      location.reload()
+    }
+  </script>
+</body>
+</html>

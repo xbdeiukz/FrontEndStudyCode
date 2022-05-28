@@ -1,0 +1,34 @@
+h2 {
+	text-align: center;
+}
+
+.content {
+	line-height: 32px;
+	margin: 0 8px;
+}
+
+
+
+.manual-scroll {
+	background: url('../image/play.png') no-repeat 13px 10px/40px 40px;
+}
+
+.auto-scroll {
+	background: url('../image/pause.png') no-repeat 11px 10px/40px 40px;
+}
+
+.play-control {
+	display: block;
+	position: fixed;
+	right: 25px;
+	bottom: 100px;
+	width: 60px;
+	height: 60px;	
+	border-radius: 50%;
+	background-color: #ffa400;
+	opacity: .6;
+}
+
+.play-control:hover {
+	opacity: 1;
+}

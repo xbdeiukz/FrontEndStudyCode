@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>淘宝网-淘！我喜欢</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <style>
+    @font-face {
+      font-family: 'iconfont';
+      /* project id 2155890 */
+      src: url('//at.alicdn.com/t/font_2155890_tfaplst2yve.eot');
+      src: url('//at.alicdn.com/t/font_2155890_tfaplst2yve.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_2155890_tfaplst2yve.woff2') format('woff2'),
+        url('//at.alicdn.com/t/font_2155890_tfaplst2yve.woff') format('woff'),
+        url('//at.alicdn.com/t/font_2155890_tfaplst2yve.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_2155890_tfaplst2yve.svg#iconfont') format('svg');
+    }
+
+    .iconfont {
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 顶部 -->
+  <div class="layer topMessage clearfix">
+    <ul class="topLeft fl">
+      <li>
+        <span class="area mr7">中国大陆</span>
+        <span class="iconfont navArrow">&#xe6a4;</span>
+      </li>
+      <li>
+        <a href="#" class="mr7" style="color: #f22e00;">亲，请登录</a>
+        <a href="#" class="mr7">免费注册</a>
+      </li>
+      <li>
+        <a href="#">手机逛淘宝</a>
+      </li>
+    </ul>
+    <ul class="topRight fr">
+      <li>
+        <a href="#">我的淘宝</a>
+        <span class="iconfont navArrow">&#xe6a4;</span>
+      </li>
+      <li>
+        <a href="#"><span class="iconfont mr5 cf40" style="color: #ff4400;">&#xe6b8;</span>购物车</a>
+        <span class="iconfont navArrow">&#xe6a4;</span>
+      </li>
+      <li>
+        <a href="#"><span class="iconfont mr5 store">&#xe622;</span>收藏夹</a>
+        <span class="iconfont navArrow">&#xe6a4;</span>
+      </li>
+      <li>
+        <a href="#">商品分类</a>
+      </li>
+      <li>
+        <a href="#">免费开店</a>
+      </li>
+      <li>
+        <span class="navLine">|</span>
+      </li>
+      <li>
+        <a href="#">千牛卖家中心</a>
+        <span class="iconfont navArrow">&#xe6a4;</span>
+      </li>
+      <li>
+        <a href="#">联系客服</a>
+        <span class="iconfont navArrow">&#xe6a4;</span>
+      </li>
+      <li>
+        <a href="#"><span class="iconfont mr5 cf40" style="color: #ff4400;">&#xe613;</span>网站导航</a>
+        <span class="iconfont navArrow">&#xe6a4;</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 顶部广告 -->
+  <div class="topAd">
+    <div class="layer clearfix">
+      <a href="#" class="topAdLogo fl"><img src="images/topAdLogo.png" alt=""></a>
+      <ul class="fr">
+        <li>
+          <a href="#">
+            <h4>服饰风尚</h4>
+            <p>付定金立减</p>
+            <img src="images/topAdImg01.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>潮流生活</h4>
+            <p>1元抢百元券</p>
+            <img src="images/topAdImg02.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>手机数码</h4>
+            <p>抢5折爆款</p>
+            <img src="images/topAdImg03.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>大牌家装</h4>
+            <p>限时抢5折</p>
+            <img src="images/topAdImg04.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>全球尖货</h4>
+            <p>爆款不止5折</p>
+            <img src="images/topAdImg05.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 顶部搜索 -->
+  <div class="topSearch">
+    <div class="layer clearfix">
+      <h1 class="fl">
+        <a href="#">淘宝网</a>
+      </h1>
+      <div class="qrCode fr">
+        <span class="close iconfont">&#xe616;</span>
+        <a href="#">
+          <span>去领红包</span>
+          <img src="images/qrCode.png" alt="二维码">
+        </a>
+      </div>
+      <div class="search">
+        <ul class="srchTab clearfix">
+          <li>宝贝</li>
+          <li>天猫</li>
+          <li>店铺</li>
+        </ul>
+        <div class="srchBox clearfix">
+          <form action="">
+            <div class="srch fl">
+              <span class="iconfont srchfont">&#xe60c;</span>
+              <span class="text">taobaoHomepage</span>
+              <input type="text">
+              <a href="#"><span class="iconfont recognize">&#xe6c0;</span></a>
+            </div>
+            <div class="srchBtn fl">
+              <button type="submit">搜索</button>
+            </div>
+          </form>
+        </div>
+        <ul class="srchContent clearfix">
+          <li><a href="#">新款连衣裙</a></li>
+          <li><a href="#">四件套</a></li>
+          <li><a href="#" style="color: #ff4400">潮流T恤</a></li>
+          <li><a href="#">时尚女鞋</a></li>
+          <li><a href="#">短裤</a></li>
+          <li><a href="#">半身裙</a></li>
+          <li><a href="#">男士外套</a></li>
+          <li><a href="#">墙纸</a></li>
+          <li><a href="#">行车记录仪</a></li>
+          <li><a href="#">新款男鞋</a></li>
+          <li><a href="#">耳机</a></li>
+          <li><a href="#">时尚女包</a></li>
+          <li><a href="#">沙发</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="subSearch">
+      <div class="layer">
+        <h2 class="fl clearfix">
+          <a href="#">淘宝网</a>
+        </h2>
+        <div class="subSrch clearfix">
+          <form action="">
+            <div class="fl srchBox">
+              <ul class="srchTab fl">
+                <li>宝贝 <span class="iconfont">&#xe6a4;</span></li>
+                <li>天猫 <span class="iconfont">&#xe6a4;</span></li>
+                <li>店铺 <span class="iconfont">&#xe6a4;</span></li>
+              </ul>
+              <div class="srch fl">
+                <span class="iconfont srchfont">&#xe60c;</span>
+                <span class="text">taobaoHomepage</span>
+                <input type="text" autofocus="autofocus">
+                <a href="#"><span class="iconfont recognize">&#xe6c0;</span></a>
+              </div>
+            </div>
+            <div class="fl srchBtn">
+              <button type="submit">搜索</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 顶部导航 -->
+  <div class="layer nav clearfix">
+    <h2 class="fl">主题市场</h2>
+    <ul class="clearfix">
+      <li><a href="#">天猫</a></li>
+      <li><a href="#">聚划算</a></li>
+      <li><a href="#">天猫超市</a></li>
+      <li class="line">|</li>
+      <li><a href="#">淘抢购</a></li>
+      <li><a href="#">电器城</a></li>
+      <li><a href="#">司法拍卖</a></li>
+      <li><a href="#">淘宝心选</a></li>
+      <li class="line">|</li>
+      <li><a href="#">飞猪旅行</a></li>
+      <li><a href="#">智能生活</a></li>
+      <li><a href="#">苏宁易购</a></li>
+    </ul>
+  </div>
+
+  <!-- 淘宝首屏 -->
+  <div class="layer firstScreen clearfix">
+    <!-- 侧边导航 -->
+    <ul class="sideNav fl">
+      <li>
+        <span><a href="#">女装</a></span> / <span><a href="#">内衣</a></span> / <span><a href="#">家居</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">女鞋</a></span> / <span><a href="#">男鞋</a></span> / <span><a href="#">箱包</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">母婴</a></span> / <span><a href="#">童装</a></span> / <span><a href="#">玩具</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">男装</a></span> / <span><a href="#">户外运动</a></span> <i class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">美妆</a></span> / <span><a href="#">彩妆</a></span> / <span><a href="#">个护</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">手机</a></span> / <span><a href="#">数码</a></span> / <span><a href="#">企业</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">大家电</a></span> / <span><a href="#">生活电器</a></span> <i class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">零食</a></span> / <span><a href="#">生鲜</a></span> / <span><a href="#">茶酒</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">厨具</a></span> / <span><a href="#">收纳</a></span> / <span><a href="#">清洁</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">家纺</a></span> / <span><a href="#">家饰</a></span> / <span><a href="#">鲜花</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">图书音像</a></span> / <span><a href="#">文具</a></span> <i class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">医药保健</a></span> / <span><a href="#">进口</a></span> <i class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">汽车</a></span> / <span><a href="#">二手车</a></span> / <span><a href="#">用品</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">房产</a></span> / <span><a href="#">装修家具</a></span> / <span><a href="#">建材</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+      <li>
+        <span><a href="#">手表</a></span> / <span><a href="#">眼镜</a></span> / <span><a href="#">珠宝饰品</a></span> <i
+          class="iconfont">&#xe61c;</i>
+      </li>
+    </ul>
+    <!-- 加入淘宝 -->
+    <div class="colRight fr">
+      <div class="member">
+        <div class="hdImg">
+          <img src="images/hdImg.png" alt="">
+        </div>
+        <div>Hi! 你好</div>
+        <ul class="tjb">
+          <li><a href="#"><span class="iconfont">&#xe601;</span>领淘金币抵钱</a></li>
+          <li><a href="#"><span class="iconfont">&#xe601;</span>会员俱乐部</a></li>
+        </ul>
+        <ul class="login clearfix">
+          <li><a href="#">登录</a></li>
+          <li><a href="#">注册</a></li>
+          <li><a href="#">开店</a></li>
+        </ul>
+      </div>
+      <div class="txp">
+        <a href="#"><img src="images/txp.jpg" alt=""></a>
+      </div>
+      <div class="focus">
+        <ul class="focusHd">
+          <li><a href="#">公告</a></li>
+          <li><a href="#">规则</a></li>
+          <li><a href="#">论坛</a></li>
+          <li><a href="#">安全</a></li>
+          <li><a href="#">公益</a></li>
+        </ul>
+        <div class="focusBd">
+          <ul class="notice">
+            <li><a href="#">95公益周阿里、腾讯等六家公司同台联合做公益</a></li>
+            <li><a href="#">淘宝造物节之城市秘密</a></li>
+            <li><a href="#">聚划算88红包省钱卡</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="conveList clearfix">
+        <li>
+          <a href="#">
+            <span></span>
+            <p>充话费</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <p>旅行</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <p>车险</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <p>游戏</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <p>车票</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <p>电影</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <p>酒店</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span></span>
+            <p>理财</p>
+          </a>
+        </li>
+      </ul>
+      <div class="aliApp">
+        <div class="aliAppHd  clearfix">
+          <h3 class="fl">阿里APP</h3>
+          <div class="fr"><a href="#">更多<span class="iconfont">&#xe61c;</span></a></div>
+        </div>
+        <ul class="aliAppBd clearfix">
+          <li><a href="#"><img src="images/App01.png" alt=""></a></li>
+          <li><a href="#"><img src="images/App02.png" alt=""></a></li>
+          <li><a href="#"><img src="images/App03.png" alt=""></a></li>
+          <li><a href="#"><img src="images/App04.png" alt=""></a></li>
+          <li><a href="#"><img src="images/App05.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 首屏中间 -->
+    <div class="colMiddle fl">
+      <!-- banner -->
+      <div class="bannerBox">
+        <ul class="banner">
+          <li><a href="#"><img src="images/banner01.jpg" alt=""></a></li>
+          <li><a href="#"><img src="images/banner02.jpg" alt=""></a></li>
+          <li><a href="#"><img src="images/banner03.jpg" alt=""></a></li>
+          <li><a href="#"><img src="images/banner04.jpg" alt=""></a></li>
+          <li><a href="#"><img src="images/banner05.jpg" alt=""></a></li>
+        </ul>
+        <ul class="btn">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="arrow">
+          <li class="pre"><span class="iconfont">&#xe62f;</span></li>
+          <li class="next"><span class="iconfont">&#xe60f;</span></li>
+        </ul>
+      </div>
+      <!-- 天猫广告 -->
+      <div class="tmall">
+        <div class="tmallHd">
+          <span class="tmallHdBg"></span>
+          <ul class="inner">
+            <li>理想生活上天猫</li>
+            <li><span>1</span>/<span>6</span></li>
+          </ul>
+        </div>
+        <ul class="tmallNav">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="tmallBd">
+          <div class="tmallAd">
+            <ul class="tmallStore">
+              <li><a href="#"><img src="images/tmallStore01.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore02.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore03.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore04.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore05.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore06.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore07.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore08.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore09.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore10.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore11.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tmallStore12.png" alt=""></a></li>
+            </ul>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+          </div>
+          <ul class="arrow">
+            <li class="pre"><span class="iconfont">&#xe62f;</span></li>
+            <li class="next"><span class="iconfont">&#xe60f;</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 中间广告 -->
+    <div class="colSub fr">
+      <div class="double11">
+        <a href="#"><img src="images/double11.png" alt=""></a>
+      </div>
+
+      <div class="hot">
+        <h5>今日热卖</h5>
+        <div>
+          <a href="#"><img src="images/hot.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部广告 -->
+    <!-- <div class="bottomAd layer fl"></div> -->
+  </div>
+
+  <!-- 有好货 -->
+  <div class="layer goodGoods">
+    <h3 class="goodGoodsHd clearfix">
+      <img src="images/goodGoods.png" alt="有好货">
+      <span>与品质生活不期而遇</span>
+    </h3>
+    <ul class="goodGoodsBd clearfix">
+      <li>
+        <div class="wrapper">
+          <a href="#"><img src="images/goods01.png" alt=""></a>
+        </div>
+        <div class="info">
+          <h4><a href="#">大豆家 方头奶奶鞋</a></h4>
+          <p><a href="#">一脚蹬设计，方便日常的穿脱。</a></p>
+          <p><a href="#"><span class="iconfont">&#xe71c;</span> 3758 人说好</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper">
+          <a href="#"><img src="images/goods02.png" alt=""></a>
+        </div>
+        <div class="info">
+          <h4><a href="#">佳宝路转角水槽</a></h4>
+          <p><a href="#">304不锈钢，表面光洁坚固耐用。</a></p>
+          <p><a href="#"><span class="iconfont">&#xe71c;</span> 123 人说好</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper">
+          <a href="#"><img src="images/goods03.png" alt=""></a>
+        </div>
+        <div class="info">
+          <h4><a href="#">肖优秀真皮细高跟过膝瘦腿弹力靴</a></h4>
+          <p><a href="#">一细跟尖头设计更显优雅女人味。</a></p>
+          <p><a href="#"><span class="iconfont">&#xe71c;</span> 68 人说好</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper">
+          <a href="#"><img src="images/goods01.png" alt=""></a>
+        </div>
+        <div class="info">
+          <h4><a href="#">LANCOME秋冬限量迷雾红管唇膏</a></h4>
+          <p><a href="#">雾面质感暗红色管身，优雅而高贵。</a></p>
+          <p><a href="#"><span class="iconfont">&#xe71c;</span> 16 人说好</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper">
+          <a href="#"><img src="images/goods02.png" alt=""></a>
+        </div>
+        <div class="info">
+          <h4><a href="#">汽车盲点变道辅助系统，后视镜提醒</a></h4>
+          <p><a
+              href="#">行车安全盲区监测系统，采用钻波探测盲区监测技术，当车速超过15km/h时，系统即刻激活工作，全面解决盲区带来的变道危险。在行车过程中，当车主打开转向灯将要并线时，如后方有移动物体进入盲区，后视镜会自动亮起红灯提醒，系统发出警告声，让驾驶员能够及时做出应对，避免意外发生。</a>
+          </p>
+          <p><a href="#"><span class="iconfont">&#xe71c;</span> 23 人说好</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper">
+          <a href="#"><img src="images/goods03.png" alt=""></a>
+        </div>
+        <div class="info">
+          <h4><a href="#">PUMA芥末绿复古老爹鞋</a></h4>
+          <p><a href="#">芥末绿色的鞋面视觉上给人一种清新感。</a></p>
+          <p><a href="#"><span class="iconfont">&#xe71c;</span> 7 人说好</a></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 皮夹克 -->
+  <div class="layer leather clearfix">
+    <a href="#"><img src="images/leather.jpg" alt=""></a>
+  </div>
+
+  <!-- END -->
+  <div class="layer end">
+    <div>END</div>
+    <ul>
+      <li>
+        <h4>
+          <span class="iconfont">&#xe607;</span>
+          <span>消费者保障</span>
+        </h4>
+        <div>
+          <a href="#">保障范围</a>
+          <a href="#">退货退款流程</a>
+          <a href="#">服务中心</a>
+          <a href="#">更多特色服务</a>
+        </div>
+      </li>
+      <li>
+        <h4>
+          <span class="iconfont">&#xe67a;</span>
+          <span>新手上路</span>
+        </h4>
+        <div>
+          <a href="#">新手专区</a>
+          <a href="#">消费警示</a>
+          <a href="#">交易安全</a>
+          <a href="#">24小时在线帮助</a>
+          <a href="#">免费开店</a>
+        </div>
+      </li>
+      <li>
+        <h4>
+          <span class="iconfont">&#xe602;</span>
+          <span>付款方式</span>
+        </h4>
+        <div>
+          <a href="#">快捷支付</a>
+          <a href="#">信用卡</a>
+          <a href="#">余额宝</a>
+          <a href="#">蚂蚁花呗</a>
+          <a href="#">货到付款</a>
+        </div>
+      </li>
+      <li>
+        <h4>
+          <span class="iconfont">&#xe603;</span>
+          <span>淘宝特色</span>
+        </h4>
+        <div>
+          <a href="#">手机淘宝</a>
+          <a href="#">旺旺/旺信</a>
+          <a href="#">大众评审</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 侧边栏 -->
+  <ul class="sideBar">
+    <li><a href="#">品质好货</a></li>
+    <li><a href="#">好店直播</a></li>
+    <li><a href="#">实惠热卖</a></li>
+    <li><a href="#">猜你喜欢</a></li>
+    <li><a href="#"><span class="iconfont">&#xe68f;</span>顶部</a></li>
+    <li><a href="#">反馈</a></li>
+    <li><a href="#">暴恐举报</a></li>
+  </ul>
+
+  <!-- 底部 -->
+  <div class="bottom">
+    <!-- 阿里服务 -->
+    <div class="layer aliService clearfix">
+      <i><a href="#">阿里巴巴集团</a></i><span>|</span>
+      <i><a href="#">淘宝网</a></i><span>|</span>
+      <i><a href="#">天猫</a></i><span>|</span>
+      <i><a href="#">聚划算</a></i><span>|</span>
+      <i><a href="#">全球速卖通</a></i><span>|</span>
+      <i><a href="#">阿里巴巴国际交易市场</a></i><span>|</span>
+      <i><a href="#">1688</a></i><span>|</span>
+      <i><a href="#">阿里妈妈</a></i><span>|</span>
+      <i><a href="#">飞猪</a></i><span>|</span>
+      <i><a href="#">淘小铺</a></i><span>|</span>
+      <i><a href="#">阿里云计算</a></i><span>|</span>
+      <i><a href="#">AliOS</a></i><span>|</span>
+      <i><a href="#">阿里通信</a></i><span>|</span>
+      <i><a href="#">一淘</a></i><span>|</span>
+      <i><a href="#">万网</a></i><span>|</span>
+      <i><a href="#">高德</a></i><span>|</span>
+      <i><a href="#">UC</a></i><span>|</span>
+      <i><a href="#">友盟</a></i><span>|</span>
+      <i><a href="#">阿里安全</a></i><br>
+      <i><a href="#">虾米</a></i><span>|</span>
+      <i><a href="#">大麦网</a></i><span>|</span>
+      <i><a href="#">钉钉</a></i><span>|</span>
+      <i><a href="#">支付宝</a></i><span>|</span>
+      <i><a href="#">优酷</a></i><span>|</span>
+      <i><a href="#">土豆</a></i><span>|</span>
+      <i><a href="#">阿里健康</a></i><span>|</span>
+      <i><a href="#">阿里健康</a></i><span>|</span>
+      <i><a href="#">阿里影业</a></i><span>|</span>
+      <i><a href="#">阿里体育</a></i><span>|</span>
+      <i><a href="#">网商银行</a></i>
+    </div>
+    <!-- 相关 -->
+    <p class="layer about">
+      <span><a href="#">关于淘宝</a></span>
+      <span><a href="#">合作伙伴</a></span>
+      <span><a href="#">营销中心</a></span>
+      <span><a href="#">廉政举报</a></span>
+      <span><a href="#">联系客服</a></span>
+      <span><a href="#">开放平台</a></span>
+      <span><a href="#">诚征英才</a></span>
+      <span><a href="#">联系我们</a></span>
+      <span><a href="#">网站地图</a></span>
+      <span><a href="#">隐私权政策</a></span>
+      <span><a href="#">法律声明</a></span>
+      <span><a href="#">知识产权</a></span>
+      <span class="line">|</span>
+      <span class="copyRight">©2003-现在 Taobao.com 版权所有</span>
+    </p>
+    <!-- 许可证书 -->
+    <p class="layer licence">
+      <span><a href="#">增值电信业务经营许可证：浙B2-20080224</a></span>
+      <span class="line">|</span>
+      <span><a href="#">增值电信业务经营许可证（跨地区）：B2-20150210</a></span>
+      <span class="line">|</span>
+      <span><a href="#">浙网文（2019）1033-086号</a></span>
+      <span class="line">|</span>
+      <span class="record">浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</span>
+    </p>
+    <!-- 资格证书 -->
+    <p class="layer qualification">
+      <span>互联网药品信息服务资格证书（浙）-经营性-2018-0010</span>
+      <span class="line">|</span>
+      <span>短消息类服务接入代码使用证书：号【2016】00154-A01</span>
+      <span class="line">|</span>
+      <span>信息网络传播视听许可证：1109364号</span>
+      <span class="line">|</span>
+      <span>出版物网络交易平台服务经营备案号：新出发浙备字第002号</span>
+    </p>
+    <!-- 公网安备 -->
+    <p class="layer PNS">
+      <span><a href="#"><span class="emblem"></span>浙公网安备 33010002000078号</a></span>
+      <span class="line">|</span>
+      <span>广播电视节目制作经营许可证（浙）字第01012号</span>
+      <span class="line">|</span>
+      <span>市场名称登记证：工商网市字3301004120号</span>
+      <span class="line">|</span>
+      <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</span>
+    </p>
+    <p class="layer picLinks">
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span><br>
+      <span><a href="#"></a></span>
+      <span><a href="#"></a></span>
+    </p>
+  </div>
+
+  <script>
+    var subSearch = document.getElementsByClassName("subSearch");
+    var nav = document.getElementsByClassName("nav");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop >= 260) {
+        subSearch[0].style.cssText = "display: block; position: fixed; top: 0; z-index: 999";
+      }
+      if (document.documentElement.scrollTop < 260) {
+        subSearch[0].style.cssText = "display: none;";
+      }
+    }
+  </script>
+</body>
+
+</html>

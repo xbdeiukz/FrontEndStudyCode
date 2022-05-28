@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>区域内的弹球</title>
+  <style>
+    #box {
+      position: relative;
+      margin: auto;
+      width: 960px;
+      height: 666px;
+      background-color: lightseagreen;
+      border: 18px solid;
+      border-top-color: red;
+      border-right-color: green;
+      border-bottom-color: blue;
+      border-left-color: yellow;
+      border-radius: 25px;
+    }
+
+    .hole {
+      position: absolute;
+      top: calc(50% - 63px);
+      left: calc(50% - 63px);
+      width: 100px;
+      height: 100px;
+      border: solid 13px;
+      border-top-color: blue;
+      border-right-color: yellow;
+      border-bottom-color: red;
+      border-left-color: green;
+      border-radius: 50%;
+      background-color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div class="hole"></div>
+  </div>
+</body>
+
+<script>
+  var box = document.getElementById('box')
+  box.onclick = function () {
+    var ball = document.createElement('div')
+    ball.style.cssText = 'position:absolute; border-radius: 50%; backgroundColor: transparent'
+    box.appendChild(ball)
+    ball.style.visibility = 'hidden'
+
+    // 球的大小：
+    var diameter = Math.random() * 60 + 36
+    ball.style.width = diameter + 'px'
+    ball.style.height = diameter + 'px'
+
+    // 球首次出现位置：
+    var top = box.clientHeight / 2 - ball.offsetHeight / 2, // 如果元素 display: none, 则无法获取它的 offsetWidth 和 offsetHeight, 代码52行
+      left = box.clientWidth / 2 - ball.offsetWidth / 2
+
+    // 球的颜色：
+    var arrBgColor = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink', 'hotpink', 'orangered']
+    ball.style.backgroundColor = arrBgColor[parseInt(Math.random() * 10)]
+
+    // 球的速度（速率+方向）：
+    var vx = parseInt((Math.random() * 2 - 1) * 13) + 0.001,
+      vy = parseInt((Math.random() * 2 - 1) * 13) + 0.001
+
+    setInterval(function () { // 定时器开启后不是立即执行里面代码，而是先延迟一个周期后再执行
+      ball.style.visibility = 'visible'
+
+      ball.style.top = top + 'px'
+      ball.style.left = left + 'px'
+
+      if (top < 0 || top >= (box.clientHeight - ball.offsetHeight)) {
+        vy = -vy
+      }
+      if (left < 0 || left >= (box.clientWidth - ball.offsetWidth)) {
+        vx = -vx
+      }
+
+      top += vy
+      left += vx
+    }, 33)
+  }
+</script>
+
+</html>
