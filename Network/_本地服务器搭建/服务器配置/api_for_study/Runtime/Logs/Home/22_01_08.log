@@ -1,0 +1,1283 @@
+[ 2022-01-08T00:00:21+08:00 ] ::1 /api_for_study/index.php/User/sendTelCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `js_users` WHERE `phone_number` = 2147483647 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-01-08T00:01:10+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2022-01-08T00:01:13+08:00 ] ::1 /api_for_study/index.php/User/sendTelCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `js_users` WHERE `phone_number` = 2147483647 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-01-08T00:01:21+08:00 ] ::1 /api_for_study/index.php/User/sendTelCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `js_users` WHERE `phone_number` = 2147483647 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-01-08T00:02:13+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2022-01-08T00:02:18+08:00 ] ::1 /api_for_study/index.php/User/sendTelCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `js_users` WHERE `phone_number` = 2147483647 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-01-08T00:04:21+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2022-01-08T00:04:38+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = '17608030987' OR `phone_number` = '17608030987' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 57 行.
+
+[ 2022-01-08T00:05:13+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2022-01-08T00:05:19+08:00 ] ::1 /api_for_study/index.php/User/verify?rand=1641571519202
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2022-01-08T00:05:21+08:00 ] ::1 /api_for_study/index.php/User/sendTelCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `js_users` WHERE `phone_number` = 2147483647 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 167 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 168 行.
+
+[ 2022-01-08T00:05:41+08:00 ] ::1 /api_for_study/index.php/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+
+[ 2022-01-08T00:21:20+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2022-01-08T00:21:22+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001840s ]
+
+[ 2022-01-08T00:21:22+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2022-01-08T00:21:30+08:00 ] ::1 /api_for_study/index.php/User/verify?rand=1641572490967
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2022-01-08T00:21:31+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572491430
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2022-01-08T00:21:31+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572491598
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2022-01-08T00:21:31+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572491760
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2022-01-08T00:21:31+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572491918
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2022-01-08T00:21:32+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572492078
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2022-01-08T00:21:32+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572492398
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2022-01-08T00:21:32+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572492574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2022-01-08T00:21:32+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572492718
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2022-01-08T00:21:32+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572492870
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2022-01-08T00:21:33+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572493038
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2022-01-08T00:21:33+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572493206
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2022-01-08T00:21:33+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572493366
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2022-01-08T00:21:33+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572493526
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2022-01-08T00:21:33+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572493696
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2022-01-08T00:21:33+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572493862
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2022-01-08T00:21:34+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572494014
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2022-01-08T00:21:34+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572494166
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2022-01-08T00:21:34+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572494342
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2022-01-08T00:21:34+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572494510
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2022-01-08T00:21:34+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572494654
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2022-01-08T00:21:34+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572494798
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2022-01-08T00:21:34+08:00 ] ::1 /api_for_study/index.php/User/verify?1641572494958
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2022-01-08T00:23:18+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2022-01-08T00:23:28+08:00 ] ::1 /api_for_study/index.php/User/sendTelCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `js_users` WHERE `phone_number` = 2147483647 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 167 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 168 行.
+
+[ 2022-01-08T00:24:02+08:00 ] ::1 /api_for_study/index.php/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+
+[ 2022-01-08T00:30:00+08:00 ] ::1 /api_for_study/index.php/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+
+[ 2022-01-08T00:30:01+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2022-01-08T00:30:02+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2022-01-08T00:30:03+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2022-01-08T00:30:20+08:00 ] ::1 /api_for_study/index.php/User/verify?rand=1641573020126
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2022-01-08T00:30:22+08:00 ] ::1 /api_for_study/index.php/User/verify?1641573022070
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2022-01-08T00:30:22+08:00 ] ::1 /api_for_study/index.php/User/verify?1641573022974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2022-01-08T00:30:23+08:00 ] ::1 /api_for_study/index.php/User/verify?1641573023822
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2022-01-08T00:33:45+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2022-01-08T00:34:06+08:00 ] ::1 /api_for_study/index.php/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0112s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 65 行.
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 66 行.
+SQL: INSERT INTO `js_users` (`username`,`nickname`,`password`,`ident_code`,`token`,`timeout`,`phone_number`) VALUES ('msw_oldOoh1641573246','msw_oldOoh1641573246','081393b84d7f7926ebc61ebe95b91b86','1be62fe4c0c45a4aa7554dbe519c7783','rWoHYPbolcHLYaHTAyM7IXmhTSgRviz5','1644165246','2147483647') [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 91 行.
+
+[ 2022-01-08T00:34:06+08:00 ] ::1 /api_for_study/index.php/User/verify?rand=1641573246210
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2022-01-08T00:34:06+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2022-01-08T00:34:06+08:00 ] ::1 /api_for_study/index.php/User/checkAuth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `js_users` WHERE `ident_code` = '1be62fe4c0c45a4aa7554dbe519c7783' AND `token` = 'rWoHYPbolcHLYaHTAyM7IXmhTSgRviz5' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `timeout` FROM `js_users` WHERE `ident_code` = '1be62fe4c0c45a4aa7554dbe519c7783' AND `token` = 'rWoHYPbolcHLYaHTAyM7IXmhTSgRviz5' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 108 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 109 行.
+
+[ 2022-01-08T00:34:28+08:00 ] ::1 /api_for_study/index.php/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2022-01-08T00:34:28+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2022-01-08T00:34:42+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0113s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = '17608030987' OR `phone_number` = '17608030987' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 57 行.
+
+[ 2022-01-08T00:34:44+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0135s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = '17608030987' OR `phone_number` = '17608030987' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 57 行.
+
+[ 2022-01-08T00:34:44+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0118s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = '17608030987' OR `phone_number` = '17608030987' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 57 行.
+
+[ 2022-01-08T00:34:44+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0128s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = '17608030987' OR `phone_number` = '17608030987' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 57 行.
+
+[ 2022-01-08T00:34:45+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = '17608030987' OR `phone_number` = '17608030987' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 57 行.
+
+[ 2022-01-08T00:35:00+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2022-01-08T00:35:10+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = '17608030987' OR `phone_number` = '17608030987' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 57 行.
+
+[ 2022-01-08T00:35:26+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:27+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0109s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:28+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0123s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:28+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:33+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:34+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:34+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0128s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:34+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:34+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:34+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:35+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:35+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:35+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:40+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0122s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:40+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:40+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:40+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:41+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:41+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:41+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:41+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:41+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:41+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:42+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:42+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:42+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:42+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:35:58+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2022-01-08T00:37:10+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0122s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:17+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0107s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:17+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0121s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:18+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0124s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:18+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:18+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:18+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:18+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:18+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:19+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:19+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:19+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0131s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T00:37:19+08:00 ] ::1 /api_for_study/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `js_users` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined variable: salt D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 7 行.
+SQL: SELECT * FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `password` FROM `js_users` WHERE ( `username` = 'msw_oldOoh1641573246' OR `phone_number` = 'msw_oldOoh1641573246' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant error_msg - assumed 'error_msg' D:\Programs\wamp\www\api_for_study\Home\Model\UsersModel.class.php 第 19 行.
+
+[ 2022-01-08T01:04:24+08:00 ] ::1 /api_for_study/index.php/User/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001171s ]
+

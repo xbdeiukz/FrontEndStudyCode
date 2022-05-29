@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>分页</title>
+	<style>
+		span,
+		a {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="pageWrap"></div>
+
+	<script>
+		var oPageWrap = document.getElementById('pageWrap'),
+			pageCount = 100,
+			curPage = 1;
+
+		oPageWrap.innerHTML = setPages(pageCount, curPage);
+
+		oPageWrap.onclick = function (event) {
+			var e = event || window.evnet,
+				tar = e.traget || e.srcElement,
+				className = tar.className;
+
+			switch (className) {
+				case 'page-btn':
+					curPage = parseInt(tar.getAttribute('data-page'));
+					oPageWrap.innerHTML = setPages(pageCount, curPage);
+					break;
+				case 'prev-btn':
+					curPage--;
+					oPageWrap.innerHTML = setPages(pageCount, curPage);
+					break;
+				case 'next-btn':
+					curPage++;
+					oPageWrap.innerHTML = setPages(pageCount, curPage);
+			}
+		}
+
+		function setPages(pageCount, curPage) {	// pageCount：总页数；curPage：当前页码；
+			var pagesStr = pageItemTpl('prev');
+
+			if (pageCount > 7) {
+				if (curPage < 3) {
+					setPageBtns(1, 3);
+					pagesStr += pageItemTpl('ellipsis');
+					setPageBtns(pageCount - 1, pageCount);
+				} else if (curPage >= 3 && curPage < 5) {
+					setPageBtns(1, curPage + 1);
+					pagesStr += pageItemTpl('ellipsis');
+					setPageBtns(pageCount - 1, pageCount);
+				} else if (curPage >= 5 && curPage < pageCount - 3) {
+					setPageBtns(1, 2);
+					pagesStr += pageItemTpl('ellipsis');
+					setPageBtns(curPage - 1, curPage + 1);
+					pagesStr += pageItemTpl('ellipsis');
+					setPageBtns(pageCount - 1, pageCount);
+				} else if (curPage >= pageCount - 3 && curPage <= pageCount - 1) {
+					setPageBtns(1, 2);
+					pagesStr += pageItemTpl('ellipsis');
+					setPageBtns(curPage - 1, pageCount);
+				} else if (curPage == pageCount) {
+					setPageBtns(1, 2);
+					pagesStr += pageItemTpl('ellipsis');
+					setPageBtns(pageCount - 2, pageCount);
+				}
+			} else {
+				setPageBtns(1, pageCount);
+			}
+
+			pagesStr += pageItemTpl('next');
+
+
+			function setPageBtns(start, end) {	// 大于等于start，小于等于end；（页码）
+				for (var i = start; i <= end; i++) {
+					pagesStr += pageItemTpl('button', i);
+				}
+			}
+
+			function pageItemTpl(itemType, pageNum) { // pageNum：页码；
+				switch (itemType) {
+					case 'button':
+						if (pageNum == curPage) {
+							return '<span class="cur-page">' + pageNum + '</span>';
+						} else {
+							return '<a href="javascript:;" class="page-btn" data-page="' + pageNum + '">' + pageNum + '</a>';
+						}
+					case 'prev':
+						if (curPage == 1) {
+							return '<span class="disabled">&lt;</span>';
+						} else {
+							return '<a href="javascript:;" class="prev-btn">&lt;</a>';
+						}
+					case 'next':
+						if (curPage == pageCount) {
+							return '<span class="disabled">&gt;</span>';
+						} else {
+							return '<a href="javascript:;" class="next-btn">&gt;</a>';
+						}
+					case 'ellipsis':
+						return '<span>...</span>';
+				}
+			}
+
+			return pagesStr;
+		}
+
+	</script>
+</body>
+
+</html>
