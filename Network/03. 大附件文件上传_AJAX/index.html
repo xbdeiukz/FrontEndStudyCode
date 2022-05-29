@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>文件上传</title>
+	<style>
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			margin-top: 36px;
+		}
+
+		.progress-bar {
+			width: 600px;
+			height: 18px;
+			margin-bottom: 6px;
+			line-height: 18px;
+			border: 1px solid #666;
+			border-radius: 9px;
+			overflow: hidden;
+			text-align: center;
+		}
+
+		.progress {
+			width: 0;
+			height: 100%;
+			background-color: green;
+		}
+
+		.error-info {
+			color: orangered;
+			font-size: 12px;
+		}
+
+		#file {
+			display: none;
+		}
+
+		.file-label {
+			display: inline-block;
+			width: 90px;
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			background-color: orangered;
+			color: #fff;
+			border-radius: 6px;
+		}
+	</style>
+</head>
+
+<body>
+	<label for="file" class="file-label">选择文件<input type="file" name="" id="file" multiple></label>
+	<!-- <button type="submit" id="submitBtn">上传</button> -->
+
+	<ul class="progress-wrap">
+		<!-- <li class="progress-bar">
+			<div class="progress"></div>
+			<span class="error-info">文件类型错误</span>
+		</li> -->
+	</ul>
+
+
+	<script type="text/javascript">
+		var oFile = document.getElementById('file'),
+			oSubmitBtn = document.getElementById('submitBtn'),
+			oProgressWrap = document.getElementsByClassName('progress-wrap')[0];
+
+		oFile.onchange = function () {
+			var files = oFile.files,
+				fileLen = files.length;
+
+			console.log(files);
+
+			if (fileLen < 1) {
+				alert('未选择文件！');
+				return;
+			}
+
+			if (fileLen > 5) {
+				alert('最多同时上传5个文件！');
+				return;
+			}
+
+			oProgressWrap.innerHTML = '';
+
+			var fileName = '',
+				fileSize = 0,
+				maxSize = 3221225472,	// 文件大小不能超过3G
+				errorInfo = '',
+				fd = null;
+
+			for (var i = 0; i < fileLen; i++) {
+				fileName = files[i].name;
+				fileSize = files[i].size;
+
+				// if (!/\.(jpg|jpeg|png|gif)$/.test(fileName)) {
+				// 	errorInfo = '文件 ' + fileName + ' 不是图片类型！';
+				// }
+
+				if (fileSize > maxSize) {
+					errorInfo = '文件 ' + fileName + ' 的大小超过允许的最大值！'
+				}
+
+				var oProgressBar = document.createElement('li');
+				oProgressBar.className = 'progress-bar';
+				oProgressWrap.appendChild(oProgressBar);
+				if (errorInfo) {
+					oProgressBar.innerHTML = '<span class="error-info">' + errorInfo + '</span>';
+				} else {
+					oProgressBar.innerHTML = '<div class="progress"></div>';
+
+					// 前端验证通过，开始通过ajax异步提交数据（上传文件）：
+
+					fd = new FormData();
+					fd.append('file', files[i]);		// 此处的'file'字段由后端提供；
+
+					var xhr = window.XMLHttpRequest ?
+						new window.XMLHttpRequest() :
+						new ActiveXObject('Microsoft.XMLHTTP');
+
+					xhr.open('post', 'server/upload.php');
+					; (function (i) {
+						xhr.upload.onprogress = function (event) {
+							var e = event || window.event,
+								percent = e.loaded / e.total * 100 + '%',
+								oProgress = oProgressWrap.getElementsByClassName('progress-bar')[i].getElementsByClassName('progress')[0];
+
+							oProgress.style.width = percent;
+
+							// if (percent == '100%') {
+							// 	alert('文件上传成功！');
+							// }
+							// console.log(e, percent);
+						}
+					})(i);
+					xhr.send(fd);
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>
