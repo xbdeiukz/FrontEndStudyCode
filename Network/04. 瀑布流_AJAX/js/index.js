@@ -1,97 +1,118 @@
+// 所需配置项：
+// 1. 外层盒子（oWrap）；2.列数(column)；3.间隔(gap)；4.图片标题高度（可选）
+
 ; (function (doc) {
-	var oModOpenBtn = doc.getElementsByClassName('js-mod-open-btn')[0],
-		oModCloseBtn = doc.getElementsByClassName('js-mod-close-btn')[0],
-		oModWrap = doc.getElementsByClassName('js-upload-wrap')[0],
-		oVideoInput = doc.getElementById('js-video-file'),
-		oUploadDetail = oModWrap.getElementsByClassName('js-upload-detail')[0],
-		oPercent = oUploadDetail.getElementsByClassName('js-percent')[0],
-		oProgressBar = oUploadDetail.getElementsByClassName('js-progress-bar')[0]
-		;
-
-	var init = function () {
-		bindEvent();
+	var Waterfall = function (wrapper, opt) {
+		this.oWrap = doc.getElementsByClassName(wrapper)[0];
+		this.imgAPI = opt.imgAPI;
+		this.column = opt.column;
+		this.gap = opt.gap;
+		this.titleHeight = opt.titleHeight || 0,
+			this.itemWidth = (this.oWrap.offsetWidth - (this.column - 1) * this.gap) / this.column;
+		this.pageNum = 0;
+		this.pageCount = 0;
+		this.heightArr = [];
 	}
 
-	function bindEvent() {
-		oModOpenBtn.addEventListener('click', showModal.bind(null, true));
-		oModCloseBtn.addEventListener('click', showModal.bind(null, false));
-		oVideoInput.addEventListener('change', fileCheckUpload);
-	}
+	Waterfall.prototype = {
+		init: function () {
+			this.bindEvent();
+			this.getImgData(this.pageNum);
+		},
 
-	function showModal(bool) {
-		if (bool) {
-			oModWrap.className += ' show';
-		} else {
-			oModWrap.className = 'upload-mod-wrap js-upload-wrap';
-			restoreUploadModal();
+		bindEvent: function () {
+			window.addEventListener('scroll', this.scrollToBottom.bind(this));
+		},
+
+		scrollToBottom: function () {
+			if (getScrollOffset().top + getViewportSize().height >= getScrollSize().height) {
+				if (this.pageNum < this.pageCount) {
+					this.pageNum++;
+					if (this.pageNum != this.pageCount) {
+						this.getImgData(this.pageNum);
+					} else {
+						alert('没有更多图片！');
+					}
+				}
+			}
+		},
+
+		getImgData: function (pageNum) {
+			var _self = this;
+
+			xhr.ajax({
+				url: this.imgAPI,
+				type: 'POST',
+				dataType: 'JSON',
+				data: {
+					pageNum: pageNum,
+				},
+				success: function (data) {
+					if (data != 'NO DATA') {	// pageNum小于3时，才能返回数据；
+						var pageData = JSON.parse(data.pageData);
+
+						_self.pageCount = parseInt(data.pageSize);
+						_self.renderList(pageData);
+					}
+				}
+			});
+		},
+
+		renderList: function (data) {
+			// console.log(data);
+			var oFrag = doc.createDocumentFragment(),
+				imgArr = [];
+			data.forEach(function (item, index) {
+				var oItem = doc.createElement('div'),
+					oImg = new Image(),
+					oTitle = doc.createElement('div'),
+					itemWidth = this.itemWidth,
+					itemHeight = itemWidth * item.height / item.width + this.titleHeight;
+
+				oImg.src = item.img;
+				oTitle.innerHTML = '<p>图片标题</p>';
+				oTitle.className = 'wf-title';
+				oItem.className = 'wf-item';
+				oItem.style.width = itemWidth + 'px';
+				oItem.style.height = itemHeight + 'px';
+
+				oItem.appendChild(oImg);
+				oItem.appendChild(oTitle);
+				oFrag.appendChild(oItem);
+				this.setImgPos(oItem, itemHeight, index);
+
+				imgArr.push(oImg);
+			}, this);	// 回调函数内部this默认指向window；可通过forEach的第二个参数改变this指向；
+			this.oWrap.appendChild(oFrag);
+
+			setTimeout(function () {	// 图片淡入
+				var len = imgArr.length;
+				for (var i = 0; i < len; i++) {
+					imgArr[i].style.opacity = '1';
+				}
+			});
+		},
+
+		setImgPos: function (elem, elemHeight, index) {
+			var posIdx = -1;
+
+			if (index < this.column && this.pageNum == 0) {
+				elem.style.top = '0';
+				elem.style.left = index * (this.itemWidth + this.gap) + 'px';
+				this.heightArr.push(elemHeight + this.gap);
+			} else {
+				posIdx = this.getIdxOfMin(this.heightArr);
+				elem.style.top = this.heightArr[posIdx] + 'px';
+				elem.style.left = posIdx * (this.itemWidth + this.gap) + 'px';
+				this.heightArr[posIdx] += elemHeight + this.gap;
+			}
+		},
+
+		getIdxOfMin: function (numArr) {
+			var min = Math.min.apply(null, numArr);
+			return numArr.indexOf(min);
 		}
 	}
 
-	function fileCheckUpload() {
-		var files = this.files,
-			fileLen = files.lengh,
-			file = this.files[0],
-			fileName = file.name,
-			fileSize = file.size,
-			maxSize = 10737418240;	// 文件最大不超过1G
-
-		console.log(file);
-
-		if (fileLen < 1) {
-			alert('未选择文件！');
-			return;
-		}
-
-		if (fileLen > 1) {
-			alert('一次只可上传一个视频！');
-			return;
-		}
-
-		// if (!/\.(mp4)$/.test(fileName)) {
-		// 	alert('只支持上传.mp4文件');
-		// 	return;
-		// }
-
-		if (fileSize > maxSize) {
-			alert('文件最大不能超过1G！');
-		}
-
-		doUpload(file);
-	}
-
-	function doUpload(file) {
-		var fd = new FormData();
-
-		fd.append('file', file);	// 此处的file字段由后端提供；
-
-		var xhr = window.XMLHttpRequest ?
-			new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-
-		xhr.open('post', 'server/upload.php');
-
-		oUploadDetail.className = 'upload-detail js-upload-detail uploading';
-
-		xhr.upload.onprogress = function (event) {
-			var e = event || window.event,
-				percent = (e.loaded / e.total * 100).toFixed(1) + '%';
-
-			oPercent.innerHTML = percent;
-			oProgressBar.style.width = percent;
-		}
-
-		xhr.onload = function () {
-			oUploadDetail.className += ' finished';
-			oPercent.innerHTML = '0.0%';
-		}
-
-		xhr.send(fd);
-	}
-
-	function restoreUploadModal() {
-		if (oUploadDetail.className.indexOf('select') == -1) {
-			location.reload()
-		}
-	}
-
-	init();
+	window.Waterfall = Waterfall;
 })(document);

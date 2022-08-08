@@ -1,1 +1,1 @@
-本地服务器搭建好后，把`ThinKPHP`和`api_for_study`两个文件夹复制到`www`或`htdocs`根目录下；
+本地服务器搭建好后，把 `ThinKPHP` 和 `api_for_study` 两个文件夹复制到 `www` 或 `htdocs` 根目录下；

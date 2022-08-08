@@ -1,0 +1,45 @@
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li,
+div {
+	box-sizing: border-box;
+}
+
+input,
+button {
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+
+}
+
+th {
+	font-weight: normal;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
